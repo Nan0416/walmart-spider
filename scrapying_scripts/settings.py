@@ -67,6 +67,7 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {
     # 'scrapying_scripts.pipelines.SaveProductToFile': 300,
     'scrapying_scripts.pipelines.SaveProductToMongoDB': 400,
+    'scrapying_scripts.pipelines.SaveFailedProductToMongoDB': 500,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
