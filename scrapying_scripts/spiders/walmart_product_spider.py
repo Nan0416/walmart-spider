@@ -70,7 +70,7 @@ class WalmartProductSpider(scrapy.Spider):
             rating = review.get('roundedAverageOverallRating')
         return Product(
             url = product_url,
-            type = self.product_type,
+            category = self.product_type,
             id = pid, 
             name = product['productName'],
             image_urls = image_urls,
@@ -78,7 +78,7 @@ class WalmartProductSpider(scrapy.Spider):
             brand = product['brandName'],
             review_num = review_num if review_num is not None else 0,
             rating = rating if rating is not None else 0,
-            category = self.category
+            department = self.category
             )
 
     def tofile(self, filename, data):
