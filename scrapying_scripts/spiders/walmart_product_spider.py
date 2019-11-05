@@ -3,7 +3,8 @@ import json
 from scrapying_scripts.items import Product, FailedItem
 
 class WalmartProductSpider(scrapy.Spider):
-    def __init__(self):
+    def __init__(self, name=None, **kwargs):
+        super().__init__(name, **kwargs)
         self.product_pages = 25
         self.base_url = ""
         self.product_type = ""

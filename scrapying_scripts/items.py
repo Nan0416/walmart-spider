@@ -10,14 +10,14 @@ import scrapy
 class Product(scrapy.Item):
     url = scrapy.Field()
     id = scrapy.Field()
-    type = scrapy.Field()
+    category = scrapy.Field()
     name = scrapy.Field()
     image_urls = scrapy.Field()
     price = scrapy.Field()
     review_num = scrapy.Field()
     brand = scrapy.Field()
     rating = scrapy.Field()
-    category = scrapy.Field()
+    department = scrapy.Field()
 
 class FailedItem(scrapy.Item):
     url = scrapy.Field()
