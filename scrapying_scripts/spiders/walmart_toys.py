@@ -1,8 +1,8 @@
 from scrapying_scripts.spiders.walmart_product_spider import WalmartProductSpider
 
 class WalmartToyCategory(WalmartProductSpider):
-    def __init__(self):
-        super().__init__()
+    def __init__(self, name=None, **kwargs):
+        super().__init__(name, **kwargs)
         self.category = 'toy'
 
 class WalmartRCCarSpider(WalmartToyCategory):

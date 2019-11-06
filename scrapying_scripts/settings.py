@@ -91,7 +91,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 DB = {
-    'MONGO_DB_URI': 'mongodb://localhost:27017',
+    'MONGO_DB_URI': 'mongodb://qinnan.dev:27017',
     'MONGO_DB_NAME': 'cs6400_project',
     'COLLECTION_NAME': 'walmart_products',
     'FAILED_ITEM_COLLECTION_NAME': 'walmart_bad_products'
